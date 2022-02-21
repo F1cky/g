@@ -13,18 +13,18 @@ import random
 
 logging.basicConfig(level=logging.INFO)
 
-token = '1708389560:AAEUyLYSnLIBJ4ljznBSol7OGvxLQFdZ3sw'
+token = '5291783745:AAHIXhUJqGBAbh_fwmibhlbBgGCSU0slX5Y'
 bot = Bot(token=token)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
 db = SQLite('database.db')
 
-qiwi_token = '56cb024ab4b044c96af183fea5c280f7'
+qiwi_token = 'e65141e3f1ed808422eab67158bc152a'
 p2p = QiwiP2P(auth_key=qiwi_token)
 
 class Form(StatesGroup):
-    creator_id = ''
+    creator_id = '2070045449'
     seller_id = ''
     customer_id = ''
     money = 0
